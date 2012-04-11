@@ -1,0 +1,16 @@
+<package>
+  <description brief="MulControlMaster1">
+
+     MulControlMaster1
+
+  </description>
+  <author>tam</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/MulControlMaster1</url>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+

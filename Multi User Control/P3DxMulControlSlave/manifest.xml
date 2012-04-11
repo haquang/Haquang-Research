@@ -1,0 +1,19 @@
+<package>
+  <description brief="P3DxMulControlSlave">
+
+     P3DxMulControlSlave
+
+  </description>
+  <author>haquang</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/P3DxMulControlSlave</url>
+  <depend package="roscpp"/>
+  <depend package="nav_msgs"/>
+  <depend package="tf"/>
+  <depend package="Aria"/>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+

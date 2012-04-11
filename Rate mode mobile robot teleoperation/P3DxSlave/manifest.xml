@@ -1,0 +1,19 @@
+<package>
+  <description brief="P3DxSlave">
+
+     P3DxSlave
+
+  </description>
+  <author>haquang</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/P3DxSlave</url>
+  <depend package="roscpp"/>
+  <depend package="Aria"/>
+  <depend package="nav_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="tf"/>
+
+</package>
+
+
