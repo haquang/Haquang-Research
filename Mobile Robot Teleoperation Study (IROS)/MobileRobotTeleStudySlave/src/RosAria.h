@@ -1,0 +1,379 @@
+#include <Aria.h>
+#include "geometry_msgs/PointStamped.h"
+
+#include "tf/tf.h"
+#include "tf/transform_listener.h"
+#include <math.h>
+
+#define PC_Xm_On 1
+
+#define maxVel 500
+#define Max_Range 1000
+#define Min_Range 100
+#define Max_Force 10
+
+#define Kmin 0.0005
+#define Kmax 0.005
+
+#define range 2000
+
+class PID
+{
+private:
+	double Kp;
+	double Kd;
+	double Ki;
+	double pre_error;
+	double integral;
+	static const double dt = 0.001;
+
+public:
+	PID(const double &Kp, const double &Kd, const double &Ki)
+	{
+		this->Kp = Kp;
+		this->Kd = Kd;
+		this->Ki = Ki;
+		pre_error = 0.0;
+		integral = 0.0;
+	}
+
+	double compute(const double &Xr, const double &X)
+	{
+		double error, output;
+
+		error = Xr  - X;
+
+		integral = integral + Ki*error*dt;
+
+		output  = Kp *error  + Kd*(error - pre_error)/dt  + integral;
+		//
+		pre_error = error;
+
+		return output;
+	}
+};
+PID PosController(1,0.5,0.01);
+
+FILE *dataSla;
+/*************************************************************************************************
+ * RosAriaNode Class
+ *************************************************************************************************/
+class RosAriaNode
+{
+public:
+	RosAriaNode(ros::NodeHandle n);
+	virtual ~RosAriaNode();
+
+public:
+	int Setup();
+	void MasToSla_cb( const geometry_msgs::PointStampedConstPtr &msg);
+	void cmdener_cb( const geometry_msgs::PointStampedConstPtr &msg);
+
+	void spin();
+
+
+protected:
+	ros::NodeHandle n;
+
+	ros::Publisher SlaToMasVs_Pub;
+	ros::Publisher SlaToMasFe_Pub;
+	ros::Publisher SlaToMasFv_Pub;
+
+	ros::Subscriber MasToSla_sub;
+	ros::Subscriber MasToSlaEnergy_sub;
+	ros::Time veltime;
+
+	std::string serial_port;
+
+	ArSimpleConnector *conn;
+	ArRobot *robot;
+
+	ArSonarDevice sonar;
+	ArPose Position;
+
+
+
+	/*
+	 * Master
+	 */
+
+	double Xm;
+	double Vm;
+	double Fve;
+	double mst_Xm_P;
+	double Scale;
+	/*
+	 * Slave
+	 */
+	double Vs;
+	double Vsd;
+	double Fe;
+	double Fv; //Velocity based
+	double FvGain;
+	double Fs;
+	double sla_Vs_P;
+	double sla_Fe_P;
+	double sla_Fv_P;
+	double sla_Xm_N;
+	double dObs; // distance from obstacle
+	double dObsPrv;// previous distance from obstacle
+	double dObsDelta; // Time derivative
+
+	double gama;
+	double Ke;		//stiffness
+	/*
+	 * Ros
+	 */
+	geometry_msgs::PointStamped SlaToMasVs;
+	geometry_msgs::PointStamped SlaToMasFe;
+	geometry_msgs::PointStamped SlaToMasFv;
+};
+
+RosAriaNode::RosAriaNode(ros::NodeHandle nh)
+{
+	//initialize
+	Vm = 0;
+	Xm = 0;
+	mst_Xm_P = 0;
+	sla_Fe_P = 0;
+	sla_Vs_P = 0;
+	sla_Fv_P = 0;
+	sla_Xm_N = 0;
+	Vs = 0;
+	Fe = 0;
+	Fve = 0;
+	Ke=0;
+	Fv = 0;
+	FvGain = 0.005;
+	gama = 400;
+
+	Scale = 10;
+	dataSla = fopen("slv.txt","w");
+	// read in config options
+	n = nh;
+
+	// !!! port !!!
+	n.param( "port", serial_port, std::string("/dev/ttyUSB0") );
+	ROS_INFO( "using serial port: [%s]", serial_port.c_str() );
+
+	// advertise services
+
+	SlaToMasVs_Pub = n.advertise<geometry_msgs::PointStamped>("/SlatoMasVs",1);
+	SlaToMasFe_Pub = n.advertise<geometry_msgs::PointStamped>("/SlatoMasFe",1);
+	SlaToMasFv_Pub = n.advertise<geometry_msgs::PointStamped>("/SlatoMasFv",1);
+
+
+	// subscribe to services
+	MasToSla_sub = n.subscribe( "/MasToSla", 1, (boost::function < void(const geometry_msgs::PointStampedConstPtr&)>) boost::bind( &RosAriaNode::MasToSla_cb, this, _1 ));
+	MasToSlaEnergy_sub = n.subscribe( "/MasToSlaEnergy", 1, (boost::function < void(const geometry_msgs::PointStampedConstPtr&)>) boost::bind( &RosAriaNode::cmdener_cb, this, _1 ));
+
+	veltime = ros::Time::now();
+}
+RosAriaNode::~RosAriaNode()
+{
+	//disable motors and sonar.
+	fclose(dataSla);
+	robot->disableMotors();
+
+	robot->stopRunning();
+	robot->waitForRunExit();
+	Aria::shutdown();
+}
+
+int RosAriaNode::Setup()
+{
+	ArArgumentBuilder *args;
+
+	args = new ArArgumentBuilder();
+	args->add("-rp"); //pass robot's serial port to Aria
+	args->add(serial_port.c_str());
+	conn = new ArSimpleConnector(args);
+
+
+	robot = new ArRobot();
+	robot->setCycleTime(1);
+
+	ArLog::init(ArLog::File, ArLog::Verbose, "aria.log", true);
+
+	//parse all command-line arguments
+	if (!Aria::parseArgs())
+	{
+		Aria::logOptions();
+		return 1;
+	}
+
+	// Connect to the robot
+	if (!conn->connectRobot(robot)) {
+		ArLog::log(ArLog::Terse, "rotate: Could not connect to robot! Exiting.");
+		return 1;
+	}
+
+	//Sonar sensor
+	robot->addRangeDevice(&sonar);
+	robot->enableSonar();
+
+	// Enable the motors
+	robot->enableMotors();
+
+	robot->runAsync(true);
+
+	return 0;
+}
+
+void RosAriaNode::spin()
+{
+	ros::spin();
+}
+
+
+void RosAriaNode::cmdener_cb( const geometry_msgs::PointStampedConstPtr &msg)
+{
+	mst_Xm_P = msg->point.x; // mstE_P_Xm;
+}
+
+void RosAriaNode::MasToSla_cb( const geometry_msgs::PointStampedConstPtr &msg)
+{
+	Vsd = msg->point.x;
+	Fve = msg->point.y;
+	Vm = msg->point.z;
+
+	Vs = robot->getVel();
+	//Virtual force
+	Fs = PosController.compute(Vsd,Vs);
+	//ROS_INFO("Force - Vsd: %5f - %5f",Fs,Vsd);
+
+	/*
+	 * Velocity Command channel
+	 */
+	// Calculate the negative energy and dissipate active energy
+
+	if (Fs*Vsd>0)
+	{
+		sla_Xm_N -= Fs*Vsd;
+	}
+	else
+	{
+		//Do nothing
+	}
+
+
+	//PC
+#if (PC_Xm_On)
+	{
+		if (sla_Xm_N+mst_Xm_P<0)
+		{
+			sla_Xm_N += Fs*Vsd; // backward 1 step
+
+			// Modify Vsd
+			if (Fs*Fs>0)
+			{
+				Vsd = (sla_Xm_N+mst_Xm_P)/Fs;
+			}
+			else
+			{
+				Vsd = 0;
+			}
+			//ROS_INFO("Energy: N - P: %5f - %5f",sla_Xm_N,mst_Xm_P);
+			//update
+			sla_Xm_N -= Fs*Vsd;
+		}
+	}
+#endif
+	/*
+	 * Velocity Feedback channel
+	 */
+	// Calculate Positive Energy
+	if (Fve*Vs>0)
+	{
+		sla_Vs_P += Fve*Vs;
+	//	ROS_INFO("Energy - Velocity - Force: %5f - %5f - %5f",sla_Vs_P,Vs,Fve);
+	}
+	else
+	{
+		//Do nothing
+	}
+
+
+
+	/*
+	 * Force Feedback Channel
+	 */
+
+	dObs = sonar.currentReadingPolar(-30,30);
+	// Variable stiffness
+	if (Vs<0)
+		Ke = Kmin;
+	else if (Vs<gama) {
+		Ke = (1/gama)*(Kmax - Kmin)*Vs+Kmin;
+	}
+	else
+		Ke = Kmax;
+
+	//ROS_INFO("Gain: %5f  %5f  %5f",Vs, gama, Ke);
+	//Environment force
+
+	if (dObs<range)
+		Fe = -Ke*(range - dObs);
+	else
+		Fe = 0;
+
+
+	if (Fe*Vm>0)
+	{
+		sla_Fe_P+=Fe*Vm;
+	}
+	else
+	{
+		//do nothing
+	}
+
+	// if (Fe>5)
+	 ROS_INFO("Obstacle Distance Force: %5f  %5f  %5f",Fe, Ke, dObs);
+
+	/*
+	 * Force Feedback Channel
+	 */
+
+
+	//Velocity Based force
+	Fv = -FvGain*Vs;
+
+	if (Fv*Vm>0)
+	{
+		sla_Fv_P+=Fv*Vm;
+	}
+	else
+	{
+		//do nothing
+	}
+
+	//Saturation
+	if (Vsd>maxVel)
+		Vsd = maxVel;
+	if (Vsd<-maxVel)
+		Vsd = -maxVel;
+
+	//	ROS_INFO("Velocity - Set Vel: %5f - %5f",Vs,Vsd);
+
+	robot->setVel(Vsd);
+
+	//ROS_INFO("Velocity: %5f 	 %5f",Vsd,Vs);
+
+	fprintf(dataSla,"%.3f %.3f %.3f\n",mst_Xm_P,sla_Xm_N,Fe);
+	// Publish
+	SlaToMasVs.point.x = Vs;
+	SlaToMasVs.point.y = sla_Vs_P;
+	SlaToMasVs.point.z = Fs;
+
+	SlaToMasVs_Pub.publish(SlaToMasVs);
+
+	SlaToMasFe.point.x = Fe;
+	SlaToMasFe.point.y = sla_Fe_P;
+
+	SlaToMasFe_Pub.publish(SlaToMasFe);
+
+	SlaToMasFv.point.x = Fv;
+	SlaToMasFv.point.y = sla_Fv_P;
+
+	SlaToMasFv_Pub.publish(SlaToMasFv);
+}

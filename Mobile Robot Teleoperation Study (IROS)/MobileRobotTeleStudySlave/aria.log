@@ -1,0 +1,1272 @@
+Thu Feb 23 17:00:37 Aria: Parsing arguments
+Thu Feb 23 17:00:37 Aria: Calling parse arg functor 'ArRobotConnector' (75)
+Thu Feb 23 17:00:37 Aria: Calling parse arg functor 'ArLaserConnector' (60)
+Thu Feb 23 17:00:37 Could not connect to simulator, connecting to robot through serial port /dev/ttyUSB0.
+Thu Feb 23 17:00:37 ArSerialConnection::open: Connecting to serial port '/dev/ttyUSB0'
+Thu Feb 23 17:00:37 ArSerialConnection::open: Successfully opened and configured serial port '/dev/ttyUSB0'.
+Thu Feb 23 17:00:37 Syncing 0
+Thu Feb 23 17:00:37 Syncing 1
+Thu Feb 23 17:00:37 Syncing 2
+Thu Feb 23 17:00:37 Connected to robot.
+Thu Feb 23 17:00:37 Name: Booki_2732
+Thu Feb 23 17:00:37 Type: Pioneer
+Thu Feb 23 17:00:37 Subtype: p3dx-sh
+Thu Feb 23 17:00:37 keyword 'section' handler added
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section '' (for param)
+Thu Feb 23 17:00:37 keyword '' handler added
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'General settings' (for param)
+Thu Feb 23 17:00:37 keyword 'Class' handler added
+Thu Feb 23 17:00:37 keyword 'Subclass' handler added
+Thu Feb 23 17:00:37 keyword 'RobotRadius' handler added
+Thu Feb 23 17:00:37 keyword 'RobotDiagonal' handler added
+Thu Feb 23 17:00:37 keyword 'RobotWidth' handler added
+Thu Feb 23 17:00:37 keyword 'RobotLength' handler added
+Thu Feb 23 17:00:37 keyword 'RobotLengthFront' handler added
+Thu Feb 23 17:00:37 keyword 'RobotLengthRear' handler added
+Thu Feb 23 17:00:37 keyword 'Holonomic' handler added
+Thu Feb 23 17:00:37 keyword 'MaxRVelocity' handler added
+Thu Feb 23 17:00:37 keyword 'MaxVelocity' handler added
+Thu Feb 23 17:00:37 keyword 'MaxLatVelocity' handler added
+Thu Feb 23 17:00:37 keyword 'HasMoveCommand' handler added
+Thu Feb 23 17:00:37 keyword 'RequestIOPackets' handler added
+Thu Feb 23 17:00:37 keyword 'RequestEncoderPackets' handler added
+Thu Feb 23 17:00:37 keyword 'SwitchToBaudRate' handler added
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Conversion factors' (for param)
+Thu Feb 23 17:00:37 keyword 'AngleConvFactor' handler added
+Thu Feb 23 17:00:37 keyword 'DistConvFactor' handler added
+Thu Feb 23 17:00:37 keyword 'VelConvFactor' handler added
+Thu Feb 23 17:00:37 keyword 'RangeConvFactor' handler added
+Thu Feb 23 17:00:37 keyword 'DiffConvFactor' handler added
+Thu Feb 23 17:00:37 keyword 'Vel2Divisor' handler added
+Thu Feb 23 17:00:37 keyword 'GyroScaler' handler added
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Accessories the robot has' (for param)
+Thu Feb 23 17:00:37 keyword 'TableSensingIR' handler added
+Thu Feb 23 17:00:37 keyword 'NewTableSensingIR' handler added
+Thu Feb 23 17:00:37 keyword 'FrontBumpers' handler added
+Thu Feb 23 17:00:37 keyword 'NumFrontBumpers' handler added
+Thu Feb 23 17:00:37 keyword 'RearBumpers' handler added
+Thu Feb 23 17:00:37 keyword 'NumRearBumpers' handler added
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Sonar parameters' (for param)
+Thu Feb 23 17:00:37 keyword 'SonarNum' handler added
+Thu Feb 23 17:00:37 keyword 'SonarUnit' handler added
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'IR parameters' (for param)
+Thu Feb 23 17:00:37 keyword 'IRNum' handler added
+Thu Feb 23 17:00:37 keyword 'IRUnit' handler added
+Thu Feb 23 17:00:37 ArConfig: Making new section 'Movement control parameters' (for comment)
+Thu Feb 23 17:00:37 keyword 'SettableVelMaxes' handler added
+Thu Feb 23 17:00:37 keyword 'TransVelMax' handler added
+Thu Feb 23 17:00:37 keyword 'RotVelMax' handler added
+Thu Feb 23 17:00:37 keyword 'SettableAccsDecs' handler added
+Thu Feb 23 17:00:37 keyword 'TransAccel' handler added
+Thu Feb 23 17:00:37 keyword 'TransDecel' handler added
+Thu Feb 23 17:00:37 keyword 'RotAccel' handler added
+Thu Feb 23 17:00:37 keyword 'RotDecel' handler added
+Thu Feb 23 17:00:37 keyword 'HasLatVel' handler added
+Thu Feb 23 17:00:37 keyword 'LatVelMax' handler added
+Thu Feb 23 17:00:37 keyword 'LatAccel' handler added
+Thu Feb 23 17:00:37 keyword 'LatDecel' handler added
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'GPS parameters' (for param)
+Thu Feb 23 17:00:37 keyword 'GPSPX' handler added
+Thu Feb 23 17:00:37 keyword 'GPSPY' handler added
+Thu Feb 23 17:00:37 keyword 'GPSType' handler added
+Thu Feb 23 17:00:37 keyword 'GPSPort' handler added
+Thu Feb 23 17:00:37 keyword 'GPSBaud' handler added
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Compass parameters' (for param)
+Thu Feb 23 17:00:37 keyword 'CompassType' handler added
+Thu Feb 23 17:00:37 keyword 'CompassPort' handler added
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Laser parameters' (for param)
+Thu Feb 23 17:00:37 keyword 'LaserType' handler added
+Thu Feb 23 17:00:37 keyword 'LaserPortType' handler added
+Thu Feb 23 17:00:37 keyword 'LaserPort' handler added
+Thu Feb 23 17:00:37 keyword 'LaserAutoConnect' handler added
+Thu Feb 23 17:00:37 keyword 'LaserFlipped' handler added
+Thu Feb 23 17:00:37 keyword 'LaserPowerControlled' handler added
+Thu Feb 23 17:00:37 keyword 'LaserMaxRange' handler added
+Thu Feb 23 17:00:37 keyword 'LaserCumulativeBufferSize' handler added
+Thu Feb 23 17:00:37 keyword 'LaserX' handler added
+Thu Feb 23 17:00:37 keyword 'LaserY' handler added
+Thu Feb 23 17:00:37 keyword 'LaserTh' handler added
+Thu Feb 23 17:00:37 keyword 'LaserZ' handler added
+Thu Feb 23 17:00:37 keyword 'LaserIgnore' handler added
+Thu Feb 23 17:00:37 keyword 'LaserStartDegrees' handler added
+Thu Feb 23 17:00:37 keyword 'LaserEndDegrees' handler added
+Thu Feb 23 17:00:37 keyword 'LaserDegreesChoice' handler added
+Thu Feb 23 17:00:37 keyword 'LaserIncrement' handler added
+Thu Feb 23 17:00:37 keyword 'LaserIncrementChoice' handler added
+Thu Feb 23 17:00:37 keyword 'LaserUnitsChoice' handler added
+Thu Feb 23 17:00:37 keyword 'LaserReflectorBitsChoice' handler added
+Thu Feb 23 17:00:37 keyword 'LaserStartingBaudChoice' handler added
+Thu Feb 23 17:00:37 keyword 'LaserAutoBaudChoice' handler added
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Laser 2 parameters' (for param)
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPortType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPort'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoConnect'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserFlipped'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPowerControlled'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserMaxRange'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserX'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserY'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserTh'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserZ'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIgnore'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserEndDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserDegreesChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrement'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrementChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserUnitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 2 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Laser 3 parameters' (for param)
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPortType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPort'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoConnect'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserFlipped'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPowerControlled'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserMaxRange'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserX'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserY'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserTh'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserZ'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIgnore'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserEndDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserDegreesChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrement'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrementChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserUnitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 3 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Laser 4 parameters' (for param)
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPortType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPort'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoConnect'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserFlipped'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPowerControlled'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserMaxRange'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserX'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserY'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserTh'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserZ'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIgnore'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserEndDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserDegreesChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrement'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrementChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserUnitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 4 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Laser 5 parameters' (for param)
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPortType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPort'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoConnect'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserFlipped'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPowerControlled'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserMaxRange'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserX'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserY'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserTh'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserZ'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIgnore'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserEndDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserDegreesChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrement'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrementChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserUnitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 4 parameters and Laser 5 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Laser 6 parameters' (for param)
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPortType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPort'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoConnect'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserFlipped'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPowerControlled'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserMaxRange'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserX'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserY'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserTh'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserZ'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIgnore'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserEndDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserDegreesChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrement'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrementChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserUnitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 4 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 5 parameters and Laser 6 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Laser 7 parameters' (for param)
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPortType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPort'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoConnect'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserFlipped'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPowerControlled'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserMaxRange'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserX'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserY'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserTh'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserZ'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIgnore'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserEndDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserDegreesChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrement'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrementChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserUnitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 4 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 5 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 6 parameters and Laser 7 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Laser 8 parameters' (for param)
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPortType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPort'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoConnect'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserFlipped'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPowerControlled'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserMaxRange'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserX'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserY'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserTh'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserZ'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIgnore'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserEndDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserDegreesChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrement'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrementChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserUnitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 4 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 5 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 6 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 7 parameters and Laser 8 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfigArg ArConfig: : Making new section 'Laser 9 parameters' (for param)
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserType duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPortType duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPortType'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPortType' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPort duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPort'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPort' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoConnect duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoConnect'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoConnect' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserFlipped duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserFlipped'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserFlipped' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserPowerControlled duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserPowerControlled'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserPowerControlled' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserMaxRange duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserMaxRange'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserMaxRange' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserCumulativeBufferSize duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserCumulativeBufferSize'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserCumulativeBufferSize' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserX duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserX'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserX' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserY duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserY'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserY' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserTh duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserTh'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserTh' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserZ duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserZ'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserZ' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIgnore duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIgnore'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIgnore' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartDegrees duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserEndDegrees duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserEndDegrees'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserEndDegrees' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserDegreesChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserDegreesChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserDegreesChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrement duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrement'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrement' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserIncrementChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserIncrementChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserIncrementChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserUnitsChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserUnitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserUnitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserReflectorBitsChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserReflectorBitsChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserReflectorBitsChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserStartingBaudChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserStartingBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserStartingBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 2 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 3 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 4 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 5 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 6 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 7 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 ArConfig: Parameter LaserAutoBaudChoice duplicated in section Laser 8 parameters and Laser 9 parameters
+Thu Feb 23 17:00:37 There is already a functor to handle keyword 'LaserAutoBaudChoice'
+Thu Feb 23 17:00:37 ArConfig: Could not add parameter 'LaserAutoBaudChoice' to file parser, probably already there.
+Thu Feb 23 17:00:37 Starting parsing file params/p3dx-sh.p (params/p3dx-sh.p)
+Thu Feb 23 17:00:37 Will parse all sections
+Thu Feb 23 17:00:37 Opening file params/p3dx-sh.p from fileName given params/p3dx-sh.p and base directory 
+Thu Feb 23 17:00:37 ArConfig: Processing file
+Thu Feb 23 17:00:37 ArConfig: Processing with own processFile
+Thu Feb 23 17:00:37 ArConfig: Done processing file, ret is true
+Thu Feb 23 17:00:37 Done parsing file params/p3dx-sh.p (ret false)
+Thu Feb 23 17:00:37 Starting parsing file params/Booki_2732.p (params/Booki_2732.p)
+Thu Feb 23 17:00:37 Will parse all sections
+Thu Feb 23 17:00:37 Opening file params/Booki_2732.p from fileName given params/Booki_2732.p and base directory 
+Thu Feb 23 17:00:37 ArConfig: Processing file
+Thu Feb 23 17:00:37 ArConfig: Processing with own processFile
+Thu Feb 23 17:00:37 ArConfig: Done processing file, ret is true
+Thu Feb 23 17:00:37 Done parsing file params/Booki_2732.p (ret false)
+Thu Feb 23 17:00:37 Using default parameters for a p3dx-sh robot
+Thu Feb 23 17:00:38 Created ArSyncLoop thread with ID -1276118160
+Thu Feb 23 17:00:38 Thread ArSyncLoop (-1276118160) is running with pid 2568
+Thu Feb 23 17:01:51 Disconnecting from robot.
+Thu Feb 23 17:01:51 ArRobotPacketReceiver::receivePacket: bad packet, bad checksum
+Thu Feb 23 17:01:51 Thread ArSyncLoop (-1276118160) with pid 2568 has finished
+Thu Feb 23 17:01:52 ArSerialConnection::close: Successfully closed serial port.
