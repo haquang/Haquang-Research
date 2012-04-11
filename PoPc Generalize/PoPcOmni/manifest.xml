@@ -1,0 +1,16 @@
+<package>
+  <description brief="PoPcOmni">
+
+     PoPcOmni
+
+  </description>
+  <author>tam</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/PoPcOmni</url>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+
