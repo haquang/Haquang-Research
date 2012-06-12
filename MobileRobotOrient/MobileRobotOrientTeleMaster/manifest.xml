@@ -1,0 +1,16 @@
+<package>
+  <description brief="MobileRobotOrientTeleMaster">
+
+     MobileRobotOrientTeleMaster
+
+  </description>
+  <author>tam</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/MobileRobotOrientTeleMaster</url>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+
+</package>
+
+

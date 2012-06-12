@@ -1,0 +1,19 @@
+<package>
+  <description brief="MobileRobotOrientTeleSlave">
+
+     MobileRobotOrientTeleSlave
+
+  </description>
+  <author>haquang</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/MobileRobotOrientTeleSlave</url>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+  <depend package="Aria"/>
+  <depend package="tf"/>
+  <depend package="nav_msgs"/>
+
+</package>
+
+
